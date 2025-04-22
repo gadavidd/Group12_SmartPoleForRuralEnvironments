@@ -92,7 +92,7 @@ void loop() {
   // Turn LED OFF if delay time has passed
   if (ledOn && (millis() - activationTime >= offDelayTime)) {
     int carValueNow = analogRead(LDR_CAR);
-    if (carValueNow > carThreshold) {
+    if ((carValueNow > carThreshold) && isNight) {
       activationTime = millis();  // Extend time
       Serial.println("Car still detected — keeping LED ON.");
     } else {
