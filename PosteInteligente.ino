@@ -2,12 +2,12 @@
 #include "ThingSpeak.h"
 
 // ======= WiFi and ThingSpeak Configuration =======
-const char* WIFI_NAME = "HOME";
-const char* WIFI_PASSWORD = "V090117g";
+const char* WIFI_NAME = "WIFI";
+const char* WIFI_PASSWORD = "Password";
 
-unsigned long CHANNEL_ID = 2928383;
-const char* WRITE_API_KEY = "1LZ5ZQLYCDST6HWL";
-const char* READ_API_KEY  = "UK78QYYCSOGGBEBR";
+unsigned long CHANNEL_ID = channel;
+const char* WRITE_API_KEY = "KEY_WRITE";
+const char* READ_API_KEY  = "KEY_READ";
 
 WiFiClient client;
 
