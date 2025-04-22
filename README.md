@@ -66,29 +66,24 @@ This project presents a **low-cost smart streetlight solution** designed for rur
 
 This section shows examples of how the Serial Monitor displays sensor values and system status in real time:
 
-### ☀️ During the Day
-
+#### ☀️ During the Day
 When ambient light is high (above the `nightThreshold`), the system recognizes it is daytime. The LED remains off, and car detection is ignored:
 Ambient Sensor: 1120 | Car Sensor: 850 | Day Ambient Sensor: 1090 | Car Sensor: 950 | Day
 
-### 🌙 During the Night Without a Car
-
+#### 🌙 During the Night Without a Car
 When ambient light is low but no car headlights are detected:
 Ambient Sensor: 820 | Car Sensor: 740 | Night | No Car Ambient Sensor: 790 | Car Sensor: 820 | Night | No Car
 
-### 🌙 During the Night With a Car
-
+#### 🌙 During the Night With a Car
 If it is night and the car’s headlights are detected (car sensor value exceeds the threshold):
 Ambient Sensor: 780 | Car Sensor: 1120 | Night | Car Detected LED turned ON - waiting 20s to send to field 2...
 
-### 🚘 Car Stays Near the Sensor
-
+#### 🚘 Car Stays Near the Sensor
 If the car remains in place and its headlights continue to be detected after the initial delay:
 Car still detected — keeping LED ON.
 
 
-### 🌒 Car Leaves After Timeout
-
+#### 🌒 Car Leaves After Timeout
 When the car moves away, and the timeout is reached:
 LED turned OFF — no car detected.
 
